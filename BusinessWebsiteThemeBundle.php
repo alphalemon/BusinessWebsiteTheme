@@ -15,7 +15,7 @@
  * 
  */
 
-namespace Themes\BusinessWebsiteThemeBundle;
+namespace AlphaLemon\Theme\BusinessWebsiteThemeBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

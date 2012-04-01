@@ -15,7 +15,7 @@
  * 
  */
 
-namespace Themes\BusinessWebsiteThemeBundle\Core\Listener;
+namespace AlphaLemon\Theme\BusinessWebsiteThemeBundle\Core\Listener;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use AlphaLemon\AlphaLemonCmsBundle\Core\Event\Actions\Block\BlockEditedEvent;

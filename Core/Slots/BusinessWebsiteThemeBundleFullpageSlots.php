@@ -15,7 +15,7 @@
  * 
  */
 
-namespace Themes\BusinessWebsiteThemeBundle\Core\Slots;
+namespace AlphaLemon\Theme\BusinessWebsiteThemeBundle\Core\Slots;
 
 use AlphaLemon\ThemeEngineBundle\Core\TemplateSlots\AlTemplateSlots;
 use AlphaLemon\ThemeEngineBundle\Core\TemplateSlots\AlSlot;

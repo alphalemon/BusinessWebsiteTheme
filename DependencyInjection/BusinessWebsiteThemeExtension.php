@@ -15,7 +15,7 @@
  * 
  */
 
-namespace Themes\BusinessWebsiteThemeBundle\DependencyInjection;
+namespace AlphaLemon\Theme\BusinessWebsiteThemeBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;

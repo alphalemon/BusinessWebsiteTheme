@@ -57,7 +57,7 @@
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/js/tabs.js</parameter>
         </parameter>
         
-        <parameter key="after_block_edit.class">Themes\BusinessWebsiteThemeBundle\Core\Listener\AfterEditBlockListener</parameter>
+        <parameter key="after_block_edit.class">AlphaLemon\Theme\BusinessWebsiteThemeBundle\Core\Listener\AfterEditBlockListener</parameter>
     </parameters>
     
     <services>
