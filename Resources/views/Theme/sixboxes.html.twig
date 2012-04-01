@@ -1,0 +1,50 @@
+{% extends 'BusinessWebsiteThemeBundle:Theme:base/base.html.twig' %}
+
+{% block body_tag %}
+<body id="page4">
+{% endblock %}
+        
+{% block content %}
+    <article id="content">
+        <div class="wrapper">
+            {% block products %}
+            <section class="cols">
+                <div class="wrapper pad_bot2">
+                {% block content_1 %}
+                    {{ renderSlot('content_1') }}
+                {% endblock %}
+                </div>
+                <div class="wrapper">
+                {% block content_2 %}
+                    {{ renderSlot('content_2') }}  
+                {% endblock %}
+                </div>
+            </section>
+            <section class="cols pad_left1">
+                <div class="wrapper pad_bot2">
+                {% block content_3 %}
+                    {{ renderSlot('content_3') }}
+                {% endblock %}
+                </div>
+                <div class="wrapper">
+                {% block content_4 %}
+                    {{ renderSlot('content_4') }}
+                {% endblock %}
+                </div>
+            </section>
+            <section class="cols pad_left1">
+                <div class="wrapper pad_bot2">
+                {% block content_5 %}
+                    {{ renderSlot('content_5') }}   
+                {% endblock %}
+                </div>
+                <div class="wrapper">
+                {% block content_6 %}
+                    {{ renderSlot('content_6') }}  
+                {% endblock %}
+                </div>
+            </section>
+            {% endblock %}
+        </div>
+    </article>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'BusinessWebsiteThemeBundle:Theme:base/base.html.twig' %}
+
+{% block body_tag %}
+<body id="page5">
+{% endblock %}
+        
+{% block content %}
+    <article id="content">
+        <div class="wrapper">
+            <section class="col1">
+            {% block middle_sidebar %}    
+                {{ renderSlot('middle_sidebar') }}
+            {% endblock %}
+            </section>
+            <section class="col2 pad_left1">
+            {% block right_sidebar %}
+                {{ renderSlot('right_sidebar') }}
+            {% endblock %}
+            </section>
+        </div>
+    </article>
+<script type="text/javascript"> Cufon.now(); </script>
+{% endblock %}

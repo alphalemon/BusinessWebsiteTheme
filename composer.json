@@ -1,0 +1,23 @@
+{
+  "name": "alphalemon/business-website-theme-bundle",
+  "description": "AlphaLemon CMS Template's Monster Business Website Theme porting",
+  "keywords": ["alphalemon", "cms", "app", "theme"],
+  "homepage": "http://alphalemon.com",
+  "type": "symfony-bundle",
+  "license": "GPL 2.0",
+  "authors": [
+    {
+      "name": "AlphaLemon",
+      "email": "info@alphalemon.com"
+    }
+  ],
+  "require": {
+    "symfony/symfony":  ">=2.0.10,<dev-master",
+    "alphalemon/app-business-dropcap-bundle": "dev-master"
+  },
+  "autoload": {
+    "psr-0": { "AlphaLemon\\Theme": ""
+    }
+  },
+  "target-dir": "AlphaLemon/Theme"
+}

@@ -1,0 +1,98 @@
+{% extends base_template %}
+
+{% block conditional_assets %}
+    <!--[if lt IE 9]> 
+  	<script type="text/javascript" src="/bundles/businesswebsitetheme/js/html5.js"></script>
+	<style type="text/css">
+            .bg{ behavior: url(/bundles/businesswebsitetheme/js/PIE.htc); }
+	</style>
+    <![endif]-->
+    <!--[if lt IE 7]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0"  alt="" /></a>
+        </div>
+    <![endif]-->
+{% endblock %}
+
+{% block body %}
+{% block header %}
+<div class="body1">
+    <div class="body2">
+        <div class="body5">
+            <div class="main">
+                <!-- header -->
+                <header>
+                    <div class="wrapper">
+                    <div id="logo">{% block logo %}{{ renderSlot('logo') }}{% endblock %}</div>
+                    <nav>
+                    {% block nav_menu %}
+                        {{ renderSlot('nav_menu') }}
+                    {% endblock %}
+                    </nav>
+                    </div>
+                </header>
+                <!-- header end-->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+<div class="body3">
+    <div class="main">
+        {% block content %}{% endblock %}
+    </div>
+</div>
+<div class="body4">
+    <div class="main">
+        <article id="content2">
+            <div class="wrapper">
+                <section class="col3">
+                    {% block footer_title_1 %}
+                        {{ renderSlot('footer_title_1') }}
+                    {% endblock %}
+                        
+                    {% block nav_menu_1 %}
+                        {{ renderSlot('nav_menu_1') }}
+                    {% endblock %}
+                </section>
+                <section class="col3 pad_left2">
+                    {% block footer_title_2 %}
+                        {{ renderSlot('footer_title_2') }}
+                    {% endblock %}
+                        
+                    {% block nav_menu_2 %}
+                        {{ renderSlot('nav_menu_2') }}
+                    {% endblock %}
+                </section>
+                <section class="col3 pad_left2">
+                    {% block footer_title_3 %}
+                        {{ renderSlot('footer_title_3') }}
+                    {% endblock %}
+                        
+                    {% block nav_menu_3 %}
+                        {{ renderSlot('nav_menu_3') }} 
+                    {% endblock %}   
+                </section>
+                <section class="col2 right">
+                    {% block footer_title_4 %}
+                        {{ renderSlot('footer_title_4') }}
+                    {% endblock %}
+                    
+                    {% block newsletter_box %}
+                        {{ renderSlot('newsletter_box') }}
+                    {% endblock %}    
+                </section>
+            </div>
+        </article>
+    </div>
+</div>
+<div class="main">
+<!-- footer -->
+    <footer>
+    {% block copyright_box %}
+        {{ renderSlot('copyright_box') }}
+    {% endblock %}
+    </footer>
+<!-- footer end -->
+</div>
+{% endblock %}

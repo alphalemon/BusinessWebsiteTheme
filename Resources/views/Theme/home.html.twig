@@ -1,0 +1,94 @@
+{% extends 'BusinessWebsiteThemeBundle:Theme:base/base.html.twig' %}
+
+{% block body_tag %}
+<body id="page1">
+{% endblock %}
+        
+{% block header %}
+<div class="body1">
+    <div class="body2">
+        <div class="main">
+<!-- header -->
+            <header>
+                <div class="wrapper">
+                <div id="logo">{% block logo %}{{ renderSlot('logo') }}{% endblock %}</div>
+                
+                {% block nav_menu %}
+                    {{ renderSlot('nav_menu') }}
+                {% endblock %}
+                
+                </div>
+                <div class="wrapper">
+                    {% block slider_box %}
+                        {{ renderSlot('slider_box') }}
+                    {% endblock %}                    
+                </div>
+            </header>
+<!-- header end-->
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+    <article id="content">
+        <div class="wrapper">
+            <section class="cols">
+            {% block top_section_title_1 %}
+                {{ renderSlot('top_section_title_1') }}
+            {% endblock %}
+            {% block top_section_1 %}
+                {{ renderSlot('top_section_1') }}
+            {% endblock %}
+            </section>
+            <section class="cols pad_left1">
+            {% block top_section_title_2 %}
+                {{ renderSlot('top_section_title_2') }}
+            {% endblock %}
+            {% block top_section_2 %}
+                {{ renderSlot('top_section_2') }}
+            {% endblock %}
+            </section>
+            <section class="cols pad_left1">
+            {% block top_section_title_3 %}
+                {{ renderSlot('top_section_title_3') }}
+            {% endblock %}
+            {% block top_section_3 %}
+                {{ renderSlot('top_section_3') }}
+            {% endblock %}
+            </section>
+            <section class="cols pad_left1">
+            {% block top_section_title_4 %}
+                {{ renderSlot('top_section_title_4') }}
+            {% endblock %}
+            {% block top_section_4 %}
+                {{ renderSlot('top_section_4') }}
+            {% endblock %}
+            </section>
+        </div>
+        <div class="wrapper">
+            <section class="col1">
+                <div class="wrapper">
+                {% block left_sidebar_content %}
+                    {{ renderSlot('left_sidebar_content') }}
+                {% endblock %}
+                </div>
+            </section>
+            <section class="col2 pad_left1">
+                {% block right_sidebar_content %}
+                    {{ renderSlot('right_sidebar_content') }}
+                {% endblock %}
+                    {#
+                <h2>Testimonials</h2>
+                <div class="testimonials">
+                {% block right_sidebar_content %}
+                    {{ renderSlot('right_sidebar_content') }}
+                {% endblock %}
+                <a href="#" class="up"></a>
+                <a href="#" class="down"></a>
+                </div>#}
+            </section>
+        </div>
+    </article>
+    <script type="text/javascript">$('h2, h3, h4, h5, .tabs ul.nav li a, h6').doCufon();</script>
+{% endblock %}

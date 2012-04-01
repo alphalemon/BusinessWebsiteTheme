@@ -1,0 +1,20 @@
+{% extends 'BusinessWebsiteThemeBundle:Theme:base/base.html.twig' %}
+
+{% block body_tag %}
+<body id="page2">
+{% endblock %}
+        
+{% block content %}
+    <article id="content">
+        <div class="wrapper tabs">
+            {% block page_content %}
+            {{ renderSlot('page_content') }}
+            {% endblock %}
+        </div>
+    </article>
+    <script>
+	$(document).ready(function() {
+		tabs.init();
+	})
+    </script>
+{% endblock %}
