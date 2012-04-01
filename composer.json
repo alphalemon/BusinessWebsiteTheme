@@ -16,7 +16,7 @@
     "alphalemon/app-business-menu-bundle": "dev-master"
   },
   "autoload": {
-    "psr-0": { "AlphaLemon\\Theme\\BusinessWebsiteBundle": ""
+    "psr-0": { "AlphaLemon\\Theme": ""
     }
   },
   "target-dir" : "BusinessWebsiteBundle"
