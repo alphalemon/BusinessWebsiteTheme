@@ -13,7 +13,8 @@
   ],
   "require": {
     "symfony/symfony":  ">=2.0.10,<dev-master",
-    "alphalemon/app-business-dropcap-bundle": "dev-master"
+    "alphalemon/app-business-dropcap-bundle": "dev-master",
+    "alphalemon/app-business-menu-bundle": "dev-master"
   },
   "autoload": {
     "psr-0": { "AlphaLemon\\Theme": ""
