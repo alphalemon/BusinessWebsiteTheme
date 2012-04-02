@@ -19,5 +19,5 @@
     "psr-0": { "AlphaLemon\\Theme\\BusinessWebsiteThemeBundle": ""
     }
   },
-  "target-dir" : "BusinessWebsiteThemeBundle"
+  "target-dir" : "AlphaLemon/Theme/BusinessWebsiteThemeBundle"
 }
