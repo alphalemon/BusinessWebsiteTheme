@@ -1,25 +1,26 @@
 slots:
   logo: 
     repeated: site
-    defaultText: |
+    htmlContent: |
       Progress Business Company
   nav_menu:  
+    blockType: BusinessMenu
     repeated: language
-    defaultText: |
-      <ul id="menu">
-        <li id="nav1" class="active"><a href="index.html">Home<span>Welcome!</span></a></li>
-        <li id="nav2"><a href="News.html">News<span>Fresh</span></a></li>
-        <li id="nav3"><a href="Services.html">Services<span>for you</span></a></li>
-        <li id="nav4"><a href="Products.html">Products<span>The best</span></a></li>
-        <li id="nav5"><a href="Contacts.html">Contacts<span>Our Address</span></a></li>
+    htmlContent: |
+      <ul class="business-menu">
+        <li><a href="#">[Home, Welcome!]</a></li>
+        <li><a href="#">[News, Fresh]</a></li>
+        <li><a href="#">[Services, for you]</a></li>
+        <li><a href="#">[Products, The best]</a></li>
+        <li><a href="#">[Contacts, Our Address]</a></li>
       </ul>
   footer_title_1:  
     repeated: language
-    defaultText: |
+    htmlContent: |
       <h4>Why Us?</h4>
   nav_menu_1:   
     repeated: language
-    defaultText: |
+    htmlContent: |
       <ul class="list1">
         <li><a href="#">Lorem ipsum dolor sit</a></li>
         <li><a href="#">Dmet, consectetur</a></li>
@@ -28,11 +29,11 @@ slots:
       </ul>
   footer_title_2:   
     repeated: language
-    defaultText: |
+    htmlContent: |
       <h4>Address</h4>
   nav_menu_2:   
     repeated: language
-    defaultText: |
+    htmlContent: |
       <ul class="address">
         <li><span>Country:</span>USA</li>
         <li><span>City:</span>San Diego</li>
@@ -41,11 +42,11 @@ slots:
       </ul>
   footer_title_3:   
     repeated: language
-    defaultText: |
+    htmlContent: |
       <h4>Follow Us</h4>
   nav_menu_3:   
     repeated: language
-    defaultText: |
+    htmlContent: |
       <ul id="icons">
         <li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon1.jpg" alt="">Facebook</a></li>
         <li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon2.jpg" alt="">Twitter</a></li>
@@ -54,11 +55,11 @@ slots:
       </ul>
   footer_title_4:   
     repeated: language
-    defaultText: |
+    htmlContent: |
       <h4>Newsletter</h4>
   newsletter_box:   
     repeated: language
-    defaultText: |
+    htmlContent: |
       <form id="newsletter" method="post">
         <div>
           <div class="wrapper">
@@ -69,5 +70,5 @@ slots:
       </form>
   copyright_box:   
     repeated: site
-    defaultText: |
+    htmlContent: |
       <a href="#">(C) Copyright Progress Business Company</a>
