@@ -4,7 +4,7 @@
   "keywords": ["alphalemon", "cms", "app", "theme"],
   "homepage": "http://alphalemon.com",
   "type": "symfony-bundle",
-  "license": "GPL 2.0",
+  "license": "GPLv2",
   "authors": [
     {
       "name": "AlphaLemon",
@@ -14,7 +14,8 @@
   "require": {
     "alphalemon/app-business-dropcap-bundle": "dev-master",
     "alphalemon/app-business-menu-bundle": "dev-master",
-    "alphalemon/app-business-slider-bundle": "dev-master"
+    "alphalemon/app-business-slider-bundle": "dev-master",
+    "alphalemon/app-business-carousel-bundle": "dev-master"
   },
   "autoload": {
     "psr-0": { "AlphaLemon\\Theme\\BusinessWebsiteThemeBundle": ""
@@ -22,3 +23,5 @@
   },
   "target-dir" : "AlphaLemon/Theme/BusinessWebsiteThemeBundle"
 }
+
+
