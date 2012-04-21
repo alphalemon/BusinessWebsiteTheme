@@ -21,6 +21,9 @@
     "psr-0": { "AlphaLemon\\Theme\\BusinessWebsiteThemeBundle": ""
     }
   },
+  "repositories": [
+      { "packagist": "false" } 
+  ],
   "target-dir" : "AlphaLemon/Theme/BusinessWebsiteThemeBundle"
 }
 
