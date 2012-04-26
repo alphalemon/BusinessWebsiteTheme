@@ -10,7 +10,7 @@
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/css/style.css</parameter>
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/css/al_fix_style.css</parameter>
         </parameter>
-        <parameter key="themes.businesswebsitetheme_home.stylesheet_cms" type="collection">
+        <parameter key="themes.businesswebsitetheme_home.stylesheets_cms" type="collection">
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/css/cms_fix.css</parameter>
         </parameter>
         <parameter key="themes.businesswebsitetheme_home.javascripts" type="collection">
