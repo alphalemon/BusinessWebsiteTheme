@@ -11,6 +11,12 @@
       "email": "info@alphalemon.com"
     }
   ],
+  "repositories": [ 
+      { 
+          "type": "composer", 
+          "url": "http://apps.alphalemon.com/" 
+      } 
+  ],
   "require": {
     "alphalemon/app-business-dropcap-bundle": "dev-master",
     "alphalemon/app-business-menu-bundle": "dev-master",
