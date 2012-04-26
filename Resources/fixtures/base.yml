@@ -14,6 +14,8 @@ slots:
         <li><a href="#">[Products, The best]</a></li>
         <li><a href="#">[Contacts, Our Address]</a></li>
       </ul>
+    internalJavascript: |
+      $(".business-menu a").doCufon();
   footer_title_1:  
     repeated: language
     htmlContent: |

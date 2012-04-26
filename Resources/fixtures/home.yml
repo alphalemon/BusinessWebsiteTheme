@@ -4,7 +4,7 @@ slots:
     htmlContent: |
       /bundles/businessslider/images/img1.jpg,/bundles/businessslider/images/img2.jpg,/bundles/businessslider/images/img3.jpg,/bundles/businessslider/images/img4.jpg
     internalJavascript: |
-      $(".slider").slide();
+      $(".slider").startSlider();
   top_section_title_1:
     blockType: BusinessDropCap
     htmlContent: |
@@ -60,32 +60,8 @@ slots:
       <p class="pad_bot1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.</p>
       <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
   right_sidebar_content: 
+    blockType: BusinessCarousel
     htmlContent: |
-      <h2>Testimonials</h2>
-      <div id="testimonials">
-        <ul>
-          <li>
-            <div>
-                â€œNam libero tempore, cum soluta nobis eligendi quo minus quod maxime placeat facere.â€�
-            </div>
-            <span><strong class="color1">James Coloway,</strong> <br />
-            Director</span>
-          </li>
-          <li>
-            <div>
-                â€œNam libero tempore, cum soluta nobis eligendi quo minus quod maxime placeat facere.â€�
-            </div>
-            <span><strong class="color1">James Coloway,</strong> <br />
-            Director</span>
-          </li>
-          <li>
-            <div>
-                â€œNam libero tempore, cum soluta nobis eligendi quo minus quod maxime placeat facere.â€�
-            </div>
-            <span><strong class="color1">James Coloway,</strong> <br />
-            Director</span>
-          </li>
-        </ul>
-      </div>
-      <a href="#" class="up"></a>
-      <a href="#" class="down"></a>
+      none
+    internalJavascript: |
+      $(".carousel").startCarousel();
