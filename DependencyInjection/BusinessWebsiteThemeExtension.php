@@ -10,9 +10,9 @@
  * file that was distributed with this source code.
  *
  * For extra documentation and help please visit http://alphalemon.com
- * 
+ *
  * @license    GPL LICENSE Version 2.0
- * 
+ *
  */
 
 namespace AlphaLemon\Theme\BusinessWebsiteThemeBundle\DependencyInjection;
@@ -28,6 +28,15 @@ class BusinessWebsiteThemeExtension extends Extension
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('business_website_theme.xml');
+
+        $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config/templates'));
+        $loader->load('home.xml');
+        $loader->load('fullpage.xml');
+
+        $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config/templates/slots'));
+        $loader->load('base.xml');
+        $loader->load('home.xml');
+        $loader->load('fullpage.xml');
     }
 
     public function getAlias()

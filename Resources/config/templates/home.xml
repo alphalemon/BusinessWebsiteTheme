@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="business_website_theme.template_assets.home" class="%alphalemon_theme_engine.template_assets.class%">
+            <call method="setThemeName">
+                <argument type="string">BusinessWebsiteThemeBundle</argument>
+            </call>
+            <call method="setTemplateName">
+                <argument type="string">Home</argument>
+            </call>
+            <call method="setExternalStylesheets">
+                <argument type="collection">
+                    <argument>@BusinessWebsiteThemeBundle/Resources/public/css/reset.css</argument>
+                    <argument>@BusinessWebsiteThemeBundle/Resources/public/css/layout.css</argument>
+                    <argument>@BusinessWebsiteThemeBundle/Resources/public/css/style.css</argument>
+                    <argument>@BusinessWebsiteThemeBundle/Resources/public/css/al_fix_style.css</argument>
+                    <argument type="collection" key="cms">
+                        <argument>@BusinessWebsiteThemeBundle/Resources/public/css/cms_fix.css</argument>
+                    </argument>
+                </argument>
+            </call>
+            <call method="setExternalJavascripts">
+                <argument type="collection">
+                    <argument>@AlphaLemonThemeEngineBundle/Resources/public/js/vendor/jquery/*</argument>
+                    <argument>@BusinessWebsiteThemeBundle/Resources/public/js/cufon-yui.js</argument>
+                    <argument>@BusinessWebsiteThemeBundle/Resources/public/js/al-cufon-replace.js</argument>
+                    <argument>@BusinessWebsiteThemeBundle/Resources/public/js/Swis721_Cn_BT_400.font.js</argument>
+                    <argument>@BusinessWebsiteThemeBundle/Resources/public/js/Swis721_Cn_BT_700.font.js</argument>
+                    <argument>@BusinessWebsiteThemeBundle/Resources/public/js/jquery.easing.1.3.js</argument>
+                    <argument>@BusinessWebsiteThemeBundle/Resources/public/js/jcarousellite.js</argument>
+                </argument>
+            </call>
+        </service>
+
+        <service id="business_website_theme.template.home.slots" class="%alphalemon_theme_engine.template_slots.class%">
+            <tag name="business_website_theme.template.home" />
+        </service>
+
+        <service id="business_website_theme.template.home" class="%alphalemon_theme_engine.template.class%">
+            <argument type="service" id="kernel" />
+            <argument type="service" id="business_website_theme.template_assets.home" />
+            <argument type="service" id="business_website_theme.template.home.slots" />
+            <tag name="app_business_website.theme.template" />
+        </service>
+    </services>
+</container>
