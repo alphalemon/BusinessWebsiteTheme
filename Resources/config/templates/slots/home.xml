@@ -30,9 +30,12 @@
                 <argument key="htmlContent">
                     <![CDATA[
                         {
-                            "dropcap": "A",
-                            "title": "Business",
-                            "subtitle": "plannig"
+                        
+                            "0" : {
+                                "dropcap": "A",
+                                "title": "Business",
+                                "subtitle": "plannig"
+                            }
                         }
                     ]]>
                 </argument>
@@ -60,9 +63,11 @@
                 <argument key="htmlContent">
                     <![CDATA[
                         {
-                            "dropcap": "B",
-                            "title": "Business",
-                            "subtitle": "strategies"
+                            "0" : {
+                                "dropcap": "B",
+                                "title": "Business",
+                                "subtitle": "strategies"
+                            }
                         }
                     ]]>
                 </argument>
@@ -90,9 +95,11 @@
                 <argument key="htmlContent">
                     <![CDATA[
                         {
-                            "dropcap": "C",
-                            "title": "Powerful",
-                            "subtitle": "analytics"
+                            "0" : {
+                                "dropcap": "C",
+                                "title": "Powerful",
+                                "subtitle": "analytics"
+                            }
                         }
                     ]]>
                 </argument>
@@ -120,9 +127,11 @@
                 <argument key="htmlContent">
                     <![CDATA[
                         {
-                            "dropcap": "D",
-                            "title": "Worldwide",
-                            "subtitle": "solutions"
+                            "0" : {
+                                "dropcap": "D",
+                                "title": "Worldwide",
+                                "subtitle": "solutions"
+                            }
                         }
                     ]]>
                 </argument>
@@ -164,7 +173,14 @@
                 <argument key="blockType">BusinessCarousel</argument>
                 <argument key="htmlContent">
                     <![CDATA[
-                        none
+                        {
+                            "0" : {
+                                "name" : "John",
+                                "surname" : "Doe",
+                                "role" : "Ceo",
+                                "comment" : "This web application is really cool!"
+                            }
+                        }
                     ]]>
                 </argument>
                 <argument key="internalJavascript">

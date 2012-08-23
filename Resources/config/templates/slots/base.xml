@@ -25,13 +25,38 @@
                 <argument key="blockType">BusinessMenu</argument>
                 <argument key="htmlContent">
                     <![CDATA[
-                        <ul class="business-menu">
-                            <li><a href="#">[Home, Welcome!]</a></li>
-                            <li><a href="#">[News, Fresh]</a></li>
-                            <li><a href="#">[Services, for you]</a></li>
-                            <li><a href="#">[Products, The best]</a></li>
-                            <li><a href="#">[Contacts, Our Address]</a></li>
-                        </ul>
+                        {
+                            "0" : {
+                                "title" : "Home",
+                                "subtitle" : "Welcome!",
+                                "internal_link" : "#",
+                                "external_link" : ""
+                            },
+                            "1" : {
+                                "title" : "News",
+                                "subtitle" : "Fresh",
+                                "internal_link" : "#",
+                                "external_link" : ""
+                            },
+                            "2" : {
+                                "title" : "Services",
+                                "subtitle" : "for you",
+                                "internal_link" : "#",
+                                "external_link" : ""
+                            },
+                            "3" : {
+                                "title" : "Products",
+                                "subtitle" : "The best",
+                                "internal_link" : "#",
+                                "external_link" : ""
+                            },
+                            "4" : {
+                                "title" : "Contacts",
+                                "subtitle" : "Our Address",
+                                "internal_link" : "#",
+                                "external_link" : ""
+                            }
+                        }
                     ]]>
                 </argument>
                 <argument key="internalJavascript">
