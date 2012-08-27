@@ -11,7 +11,20 @@
                 <argument key="blockType">BusinessSlider</argument>
                 <argument key="htmlContent">
                     <![CDATA[
-                        /bundles/businessslider/images/img1.jpg,/bundles/businessslider/images/img2.jpg,/bundles/businessslider/images/img3.jpg,/bundles/businessslider/images/img4.jpg
+                        {
+                            "0" : {
+                                "image" : "/bundles/businessslider/images/img1.jpg"
+                            },
+                            "1" : {
+                                "image" : "/bundles/businessslider/images/img2.jpg"
+                            },
+                            "2" : {
+                                "image" : "/bundles/businessslider/images/img3.jpg"
+                            },
+                            "3" : {
+                                "image" : "/bundles/businessslider/images/img4.jpg"
+                            }
+                         }
                     ]]>
                 </argument>
                 <argument key="internalJavascript">
@@ -30,7 +43,7 @@
                 <argument key="htmlContent">
                     <![CDATA[
                         {
-                        
+
                             "0" : {
                                 "dropcap": "A",
                                 "title": "Business",
