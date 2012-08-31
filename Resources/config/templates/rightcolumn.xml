@@ -5,12 +5,6 @@
                
     <services>
         <service id="business_website_theme.template_assets.rightcolumn" class="%alphalemon_theme_engine.template_assets.class%">
-            <call method="setThemeName">
-                <argument type="string">BusinessWebsiteThemeBundle</argument>
-            </call>
-            <call method="setTemplateName">
-                <argument type="string">Rightcolumn</argument>
-            </call>
             <call method="setExternalStylesheets">
                 <argument type="collection">
                     <argument>@BusinessWebsiteThemeBundle/Resources/public/css/reset.css</argument>
@@ -40,6 +34,13 @@
             <argument type="service" id="business_website_theme.template_assets.rightcolumn" />
             <argument type="service" id="business_website_theme.template.rightcolumn.slots" />
             <tag name="app_business_website.theme.template" />
+            
+            <call method="setThemeName">
+                <argument type="string">BusinessWebsiteThemeBundle</argument>
+            </call>
+            <call method="setTemplateName">
+                <argument type="string">Rightcolumn</argument>
+            </call>
         </service>
     </services>
 </container>
