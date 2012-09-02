@@ -5,7 +5,7 @@
 
 
     <services>
-        <service id="business_website_theme.template.fullpage.slots.page_content" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.fullpage.slots.page_content" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">page_content</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -40,7 +40,7 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.fullpage.slots" />
+            <tag name="business_website.theme.template.fullpage.slots" />
         </service>
     </services>
 </container>

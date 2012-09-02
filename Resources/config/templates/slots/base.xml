@@ -5,7 +5,7 @@
 
 
     <services>
-        <service id="business_website_theme.template.home.slots.logo" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.logo" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">logo</argument>
             <argument type="collection" >
                 <argument key="repeated">site</argument>
@@ -15,60 +15,19 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.base.slots" />
+            <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.nav_menu" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.nav_menu" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">nav_menu</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
                 <argument key="blockType">BusinessMenu</argument>
-                <argument key="htmlContent">
-                    <![CDATA[
-                        {
-                            "0" : {
-                                "title" : "Home",
-                                "subtitle" : "Welcome!",
-                                "internal_link" : "#",
-                                "external_link" : ""
-                            },
-                            "1" : {
-                                "title" : "News",
-                                "subtitle" : "Fresh",
-                                "internal_link" : "#",
-                                "external_link" : ""
-                            },
-                            "2" : {
-                                "title" : "Services",
-                                "subtitle" : "for you",
-                                "internal_link" : "#",
-                                "external_link" : ""
-                            },
-                            "3" : {
-                                "title" : "Products",
-                                "subtitle" : "The best",
-                                "internal_link" : "#",
-                                "external_link" : ""
-                            },
-                            "4" : {
-                                "title" : "Contacts",
-                                "subtitle" : "Our Address",
-                                "internal_link" : "#",
-                                "external_link" : ""
-                            }
-                        }
-                    ]]>
-                </argument>
-                <argument key="internalJavascript">
-                    <![CDATA[
-                        $(".business-menu a").doCufon();
-                    ]]>
-                </argument>
             </argument>
-            <tag name="business_website_theme.template.base.slots" />
+            <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.footer_title_1" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.footer_title_1" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">footer_title_1</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -78,10 +37,10 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.base.slots" />
+            <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.nav_menu_1" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.nav_menu_1" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">nav_menu_1</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -96,10 +55,10 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.base.slots" />
+            <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.footer_title_2" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.footer_title_2" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">footer_title_2</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -109,10 +68,10 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.base.slots" />
+            <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.nav_menu_2" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.nav_menu_2" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">nav_menu_2</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -127,10 +86,10 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.base.slots" />
+            <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.footer_title_3" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.footer_title_3" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">footer_title_3</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -140,10 +99,10 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.base.slots" />
+            <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.nav_menu_3" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.nav_menu_3" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">nav_menu_3</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -158,10 +117,10 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.base.slots" />
+            <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.footer_title_4" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.footer_title_4" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">footer_title_4</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -171,10 +130,10 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.base.slots" />
+            <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.newsletter_box" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.newsletter_box" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">newsletter_box</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -191,10 +150,10 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.base.slots" />
+            <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.copyright_box" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.copyright_box" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">copyright_box</argument>
             <argument type="collection" >
                 <argument key="repeated">site</argument>
@@ -204,7 +163,7 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.base.slots" />
+            <tag name="business_website.theme.template.base.slots" />
         </service>
     </services>
 </container>

@@ -5,58 +5,23 @@
 
 
     <services>
-        <service id="business_website_theme.template.home.slots.slider_box" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.slider_box" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">slider_box</argument>
             <argument type="collection" >
                 <argument key="blockType">BusinessSlider</argument>
-                <argument key="htmlContent">
-                    <![CDATA[
-                        {
-                            "0" : {
-                                "image" : "/bundles/businessslider/images/img1.jpg"
-                            },
-                            "1" : {
-                                "image" : "/bundles/businessslider/images/img2.jpg"
-                            },
-                            "2" : {
-                                "image" : "/bundles/businessslider/images/img3.jpg"
-                            },
-                            "3" : {
-                                "image" : "/bundles/businessslider/images/img4.jpg"
-                            }
-                         }
-                    ]]>
-                </argument>
-                <argument key="internalJavascript">
-                    <![CDATA[
-                        $(".slider").startSlider();
-                    ]]>
-                </argument>
             </argument>
-            <tag name="business_website_theme.template.home.slots" />
+            <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.top_section_title_1" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_title_1" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">top_section_title_1</argument>
             <argument type="collection" >
                 <argument key="blockType">BusinessDropCap</argument>
-                <argument key="htmlContent">
-                    <![CDATA[
-                        {
-
-                            "0" : {
-                                "dropcap": "A",
-                                "title": "Business",
-                                "subtitle": "plannig"
-                            }
-                        }
-                    ]]>
-                </argument>
             </argument>
-            <tag name="business_website_theme.template.home.slots" />
+            <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.top_section_1" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_1" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">top_section_1</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -66,29 +31,18 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.home.slots" />
+            <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.top_section_title_2" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_title_2" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">top_section_title_2</argument>
             <argument type="collection" >
                 <argument key="blockType">BusinessDropCap</argument>
-                <argument key="htmlContent">
-                    <![CDATA[
-                        {
-                            "0" : {
-                                "dropcap": "B",
-                                "title": "Business",
-                                "subtitle": "strategies"
-                            }
-                        }
-                    ]]>
-                </argument>
             </argument>
-            <tag name="business_website_theme.template.home.slots" />
+            <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.top_section_2" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_2" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">top_section_2</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -98,29 +52,18 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.home.slots" />
+            <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.top_section_title_3" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_title_3" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">top_section_title_3</argument>
             <argument type="collection" >
                 <argument key="blockType">BusinessDropCap</argument>
-                <argument key="htmlContent">
-                    <![CDATA[
-                        {
-                            "0" : {
-                                "dropcap": "C",
-                                "title": "Powerful",
-                                "subtitle": "analytics"
-                            }
-                        }
-                    ]]>
-                </argument>
             </argument>
-            <tag name="business_website_theme.template.home.slots" />
+            <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.top_section_3" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_3" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">top_section_3</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -130,29 +73,18 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.home.slots" />
+            <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.top_section_title_4" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_title_4" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">top_section_title_4</argument>
             <argument type="collection" >
                 <argument key="blockType">BusinessDropCap</argument>
-                <argument key="htmlContent">
-                    <![CDATA[
-                        {
-                            "0" : {
-                                "dropcap": "D",
-                                "title": "Worldwide",
-                                "subtitle": "solutions"
-                            }
-                        }
-                    ]]>
-                </argument>
             </argument>
-            <tag name="business_website_theme.template.home.slots" />
+            <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.top_section_4" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_4" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">top_section_4</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -162,10 +94,10 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.home.slots" />
+            <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.left_sidebar_content" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.left_sidebar_content" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">left_sidebar_content</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -177,32 +109,15 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.home.slots" />
+            <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website_theme.template.home.slots.right_sidebar_content" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.right_sidebar_content" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">right_sidebar_content</argument>
             <argument type="collection" >
                 <argument key="blockType">BusinessCarousel</argument>
-                <argument key="htmlContent">
-                    <![CDATA[
-                        {
-                            "0" : {
-                                "name" : "John",
-                                "surname" : "Doe",
-                                "role" : "Ceo",
-                                "comment" : "This web application is really cool!"
-                            }
-                        }
-                    ]]>
-                </argument>
-                <argument key="internalJavascript">
-                    <![CDATA[
-                        $(".carousel").startCarousel();
-                    ]]>
-                </argument>
             </argument>
-            <tag name="business_website_theme.template.home.slots" />
+            <tag name="business_website.theme.template.home.slots" />
         </service>
     </services>
 </container>

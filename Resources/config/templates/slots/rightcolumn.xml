@@ -5,7 +5,7 @@
 
 
     <services>
-        <service id="business_website_theme.template.sixboxes.slots.content_1" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.sixboxes.slots.content_1" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">content_1</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -17,9 +17,9 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.sixboxes.slots" />
+            <tag name="business_website.theme.template.sixboxes.slots" />
         </service>
-        <service id="business_website_theme.template.sixboxes.slots.content_2" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.sixboxes.slots.content_2" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">content_2</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -31,9 +31,9 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.sixboxes.slots" />
+            <tag name="business_website.theme.template.sixboxes.slots" />
         </service>
-        <service id="business_website_theme.template.sixboxes.slots.content_3" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.sixboxes.slots.content_3" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">content_3</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -45,9 +45,9 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.sixboxes.slots" />
+            <tag name="business_website.theme.template.sixboxes.slots" />
         </service>
-        <service id="business_website_theme.template.sixboxes.slots.content_4" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.sixboxes.slots.content_4" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">content_4</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -59,9 +59,9 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.sixboxes.slots" />
-        </service>        
-        <service id="business_website_theme.template.sixboxes.slots.content_5" class="%alphalemon_theme_engine.slot.class%">
+            <tag name="business_website.theme.template.sixboxes.slots" />
+        </service>
+        <service id="business_website.theme.template.sixboxes.slots.content_5" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">content_5</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -73,9 +73,9 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.sixboxes.slots" />
-        </service>     
-        <service id="business_website_theme.template.sixboxes.slots.content_6" class="%alphalemon_theme_engine.slot.class%">
+            <tag name="business_website.theme.template.sixboxes.slots" />
+        </service>
+        <service id="business_website.theme.template.sixboxes.slots.content_6" class="%alphalemon_theme_engine.slot.class%">
             <argument type="string">content_6</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -87,7 +87,7 @@
                     ]]>
                 </argument>
             </argument>
-            <tag name="business_website_theme.template.sixboxes.slots" />
+            <tag name="business_website.theme.template.sixboxes.slots" />
         </service>
     </services>
 </container>

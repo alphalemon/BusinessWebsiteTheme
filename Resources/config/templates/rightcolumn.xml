@@ -2,9 +2,9 @@
 <container xmlns="http://symfony.com/schema/dic/services"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
-               
+
     <services>
-        <service id="business_website_theme.template_assets.rightcolumn" class="%alphalemon_theme_engine.template_assets.class%">
+        <service id="business_website.theme.template_assets.rightcolumn" class="%alphalemon_theme_engine.template_assets.class%">
             <call method="setExternalStylesheets">
                 <argument type="collection">
                     <argument>@BusinessWebsiteThemeBundle/Resources/public/css/reset.css</argument>
@@ -25,16 +25,16 @@
             </call>
         </service>
 
-        <service id="business_website_theme.template.rightcolumn.slots" class="%alphalemon_theme_engine.template_slots.class%">
-            <tag name="business_website_theme.template.rightcolumn" />
+        <service id="business_website.theme.template.rightcolumn.slots" class="%alphalemon_theme_engine.template_slots.class%">
+            <tag name="business_website.theme.template.rightcolumn" />
         </service>
 
-        <service id="business_website_theme.template.rightcolumn" class="%alphalemon_theme_engine.template.class%">
+        <service id="business_website.theme.template.rightcolumn" class="%alphalemon_theme_engine.template.class%">
             <argument type="service" id="kernel" />
-            <argument type="service" id="business_website_theme.template_assets.rightcolumn" />
-            <argument type="service" id="business_website_theme.template.rightcolumn.slots" />
-            <tag name="app_business_website.theme.template" />
-            
+            <argument type="service" id="business_website.theme.template_assets.rightcolumn" />
+            <argument type="service" id="business_website.theme.template.rightcolumn.slots" />
+            <tag name="business_website.theme.template" />
+
             <call method="setThemeName">
                 <argument type="string">BusinessWebsiteThemeBundle</argument>
             </call>

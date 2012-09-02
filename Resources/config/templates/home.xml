@@ -10,7 +10,7 @@
     </parameters>
 
     <services>
-        <service id="business_website_theme.template_assets.home" class="%alphalemon_theme_engine.template_assets.class%">
+        <service id="business_website.theme.template_assets.home" class="%alphalemon_theme_engine.template_assets.class%">
             <call method="setExternalStylesheets">
                 <argument type="collection">
                     <argument>@BusinessWebsiteThemeBundle/Resources/public/css/reset.css</argument>
@@ -32,16 +32,16 @@
             </call>
         </service>
 
-        <service id="business_website_theme.template.home.slots" class="%alphalemon_theme_engine.template_slots.class%">
-            <tag name="business_website_theme.template.home" />
+        <service id="business_website.theme.template.home.slots" class="%alphalemon_theme_engine.template_slots.class%">
+            <tag name="business_website.theme.template.home" />
         </service>
 
-        <service id="business_website_theme.template.home" class="%alphalemon_theme_engine.template.class%">
+        <service id="business_website.theme.template.home" class="%alphalemon_theme_engine.template.class%">
             <argument type="service" id="kernel" />
-            <argument type="service" id="business_website_theme.template_assets.home" />
-            <argument type="service" id="business_website_theme.template.home.slots" />
-            <tag name="app_business_website.theme.template" />
-            
+            <argument type="service" id="business_website.theme.template_assets.home" />
+            <argument type="service" id="business_website.theme.template.home.slots" />
+            <tag name="business_website.theme.template" />
+
             <call method="setThemeName">
                 <argument type="string">BusinessWebsiteThemeBundle</argument>
             </call>
