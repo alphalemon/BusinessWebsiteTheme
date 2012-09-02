@@ -17,7 +17,7 @@
                 <argument type="collection">
                     <argument>@AlphaLemonThemeEngineBundle/Resources/public/js/vendor/jquery/*</argument>
                     <argument>@BusinessWebsiteThemeBundle/Resources/public/js/cufon-yui.js</argument>
-                    <argument>@BusinessWebsiteThemeBundle/Resources/public/js/cufon-replace.js</argument>
+                    <argument>@BusinessWebsiteThemeBundle/Resources/public/js//al-cufon-replace.js</argument>
                     <argument>@BusinessWebsiteThemeBundle/Resources/public/js/Swis721_Cn_BT_400.font.js</argument>
                     <argument>@BusinessWebsiteThemeBundle/Resources/public/js/Swis721_Cn_BT_700.font.js</argument>
                     <argument>@BusinessWebsiteThemeBundle/Resources/public/js/tabs.js</argument>
