@@ -5,7 +5,7 @@
 
 
     <services>
-        <service id="business_website.theme.template.home.slots.logo" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.logo" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">logo</argument>
             <argument type="collection" >
                 <argument key="repeated">site</argument>
@@ -18,7 +18,7 @@
             <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.nav_menu" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.nav_menu" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">nav_menu</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -27,7 +27,7 @@
             <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.footer_title_1" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.footer_title_1" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">footer_title_1</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -40,7 +40,7 @@
             <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.nav_menu_1" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.nav_menu_1" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">nav_menu_1</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -58,7 +58,7 @@
             <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.footer_title_2" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.footer_title_2" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">footer_title_2</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -71,7 +71,7 @@
             <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.nav_menu_2" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.nav_menu_2" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">nav_menu_2</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -89,7 +89,7 @@
             <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.footer_title_3" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.footer_title_3" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">footer_title_3</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -102,7 +102,7 @@
             <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.nav_menu_3" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.nav_menu_3" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">nav_menu_3</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -120,7 +120,7 @@
             <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.footer_title_4" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.footer_title_4" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">footer_title_4</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -133,7 +133,7 @@
             <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.newsletter_box" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.newsletter_box" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">newsletter_box</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -153,7 +153,7 @@
             <tag name="business_website.theme.template.base.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.copyright_box" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.copyright_box" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">copyright_box</argument>
             <argument type="collection" >
                 <argument key="repeated">site</argument>

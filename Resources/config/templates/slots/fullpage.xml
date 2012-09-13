@@ -5,7 +5,7 @@
 
 
     <services>
-        <service id="business_website.theme.template.fullpage.slots.page_content" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.fullpage.slots.page_content" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">page_content</argument>
             <argument type="collection" >
                 <argument key="htmlContent">

@@ -10,7 +10,7 @@
     </parameters>
 
     <services>
-        <service id="business_website.theme.template_assets.home" class="%alphalemon_theme_engine.template_assets.class%">
+        <service id="business_website.theme.template_assets.home" class="%alpha_lemon_theme_engine.template_assets.class%">
             <call method="setExternalStylesheets">
                 <argument type="collection">
                     <argument>@BusinessWebsiteThemeBundle/Resources/public/css/reset.css</argument>
@@ -32,11 +32,11 @@
             </call>
         </service>
 
-        <service id="business_website.theme.template.home.slots" class="%alphalemon_theme_engine.template_slots.class%">
+        <service id="business_website.theme.template.home.slots" class="%alpha_lemon_theme_engine.template_slots.class%">
             <tag name="business_website.theme.template.home" />
         </service>
 
-        <service id="business_website.theme.template.home" class="%alphalemon_theme_engine.template.class%">
+        <service id="business_website.theme.template.home" class="%alpha_lemon_theme_engine.template.class%">
             <argument type="service" id="kernel" />
             <argument type="service" id="business_website.theme.template_assets.home" />
             <argument type="service" id="business_website.theme.template.home.slots" />

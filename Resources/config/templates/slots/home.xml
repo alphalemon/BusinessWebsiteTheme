@@ -5,7 +5,7 @@
 
 
     <services>
-        <service id="business_website.theme.template.home.slots.slider_box" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.slider_box" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">slider_box</argument>
             <argument type="collection" >
                 <argument key="blockType">BusinessSlider</argument>
@@ -13,7 +13,7 @@
             <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.top_section_title_1" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_title_1" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_title_1</argument>
             <argument type="collection" >
                 <argument key="blockType">BusinessDropCap</argument>
@@ -21,7 +21,7 @@
             <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.top_section_1" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_1" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_1</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -34,7 +34,7 @@
             <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.top_section_title_2" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_title_2" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_title_2</argument>
             <argument type="collection" >
                 <argument key="blockType">BusinessDropCap</argument>
@@ -42,7 +42,7 @@
             <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.top_section_2" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_2" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_2</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -55,7 +55,7 @@
             <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.top_section_title_3" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_title_3" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_title_3</argument>
             <argument type="collection" >
                 <argument key="blockType">BusinessDropCap</argument>
@@ -63,7 +63,7 @@
             <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.top_section_3" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_3" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_3</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -76,7 +76,7 @@
             <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.top_section_title_4" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_title_4" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_title_4</argument>
             <argument type="collection" >
                 <argument key="blockType">BusinessDropCap</argument>
@@ -84,7 +84,7 @@
             <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.top_section_4" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.top_section_4" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_4</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -97,7 +97,7 @@
             <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.left_sidebar_content" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.left_sidebar_content" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">left_sidebar_content</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -112,7 +112,7 @@
             <tag name="business_website.theme.template.home.slots" />
         </service>
 
-        <service id="business_website.theme.template.home.slots.right_sidebar_content" class="%alphalemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.home.slots.right_sidebar_content" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">right_sidebar_content</argument>
             <argument type="collection" >
                 <argument key="blockType">BusinessCarousel</argument>
