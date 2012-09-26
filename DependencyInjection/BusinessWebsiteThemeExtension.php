@@ -32,11 +32,15 @@ class BusinessWebsiteThemeExtension extends Extension
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config/templates'));
         $loader->load('home.xml');
         $loader->load('fullpage.xml');
+        $loader->load('rightcolumn.xml');
+        $loader->load('sixboxes.xml');
 
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config/templates/slots'));
         $loader->load('base.xml');
         $loader->load('home.xml');
         $loader->load('fullpage.xml');
+        $loader->load('rightcolumn.xml');
+        $loader->load('sixboxes.xml');
     }
 
     public function getAlias()
