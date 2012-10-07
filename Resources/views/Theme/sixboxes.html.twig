@@ -1,9 +1,25 @@
 {% extends 'BusinessWebsiteThemeBundle:Theme:base/base.html.twig' %}
 
+{# BEGIN-EXTERNAL-STYLESHEETS
+@BusinessWebsiteThemeBundle/Resources/public/css/reset.css
+@BusinessWebsiteThemeBundle/Resources/public/css/layout.css
+@BusinessWebsiteThemeBundle/Resources/public/css/style.css
+@BusinessWebsiteThemeBundle/Resources/public/css/al_fix_style.css
+END-EXTERNAL-STYLESHEETS #}
+
+{# BEGIN-EXTERNAL-JAVASCRIPTS
+@AlphaLemonThemeEngineBundle/Resources/public/js/vendor/jquery/*
+@BusinessWebsiteThemeBundle/Resources/public/js/cufon-yui.js
+@BusinessWebsiteThemeBundle/Resources/public/js//al-cufon-replace.js
+@BusinessWebsiteThemeBundle/Resources/public/js/Swis721_Cn_BT_400.font.js
+@BusinessWebsiteThemeBundle/Resources/public/js/Swis721_Cn_BT_700.font.js
+@BusinessWebsiteThemeBundle/Resources/public/js/tabs.js
+END-EXTERNAL-JAVASCRIPTS #}
+
 {% block body_tag %}
 <body id="page4">
 {% endblock %}
-        
+
 {% block content %}
     <article id="content">
         <div class="wrapper">
@@ -11,23 +27,51 @@
             <section class="cols">
                 <div class="wrapper pad_bot2">
                 {% block content_1 %}
+                    {# BEGIN-SLOT CONTENT_1
+                        htmlContent: |
+                            <h3><span class="dropcap">1</span>Product name</h3>
+                            <figure><img src="/bundles/businesswebsitetheme/images/page4_img1.jpg" alt=""></figure>
+                            <p class="pad_bot1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                            <a href="#" class="link1">Read More</a>
+                    END-SLOT #}
                     {{ renderSlot('content_1') }}
                 {% endblock %}
                 </div>
                 <div class="wrapper">
                 {% block content_2 %}
-                    {{ renderSlot('content_2') }}  
+                    {# BEGIN-SLOT CONTENT_2
+                        htmlContent: |
+                            <h3><span class="dropcap">4</span>Product name</h3>
+                            <figure><img src="/bundles/businesswebsitetheme/images/page4_img2.jpg" alt=""></figure>
+                            <p class="pad_bot1">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese- runt mollit anim id est laborum.</p>
+                            <a href="#" class="link1">Read More</a>
+                    END-SLOT #}
+                    {{ renderSlot('content_2') }}
                 {% endblock %}
                 </div>
             </section>
             <section class="cols pad_left1">
                 <div class="wrapper pad_bot2">
                 {% block content_3 %}
+                    {# BEGIN-SLOT CONTENT_3
+                        htmlContent: |
+                            <h3><span class="dropcap">2</span>Product name</h3>
+                            <figure><img src="/bundles/businesswebsitetheme/images/page4_img3.jpg" alt=""></figure>
+                            <p class="pad_bot1">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.</p>
+                            <a href="#" class="link1">Read More</a>
+                    END-SLOT #}
                     {{ renderSlot('content_3') }}
                 {% endblock %}
                 </div>
                 <div class="wrapper">
                 {% block content_4 %}
+                    {# BEGIN-SLOT CONTENT_4
+                        htmlContent: |
+                            <h3><span class="dropcap">5</span>Product name</h3>
+                            <figure><img src="/bundles/businesswebsitetheme/images/page4_img4.jpg" alt=""></figure>
+                            <p class="pad_bot1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                            <a href="#" class="link1">Read More</a>
+                    END-SLOT #}
                     {{ renderSlot('content_4') }}
                 {% endblock %}
                 </div>
@@ -35,12 +79,26 @@
             <section class="cols pad_left1">
                 <div class="wrapper pad_bot2">
                 {% block content_5 %}
-                    {{ renderSlot('content_5') }}   
+                    {# BEGIN-SLOT CONTENT_5
+                        htmlContent: |
+                            <h3><span class="dropcap">3</span>Product name</h3>
+                            <figure><img src="/bundles/businesswebsitetheme/images/page4_img5.jpg" alt=""></figure>
+                            <p class="pad_bot1">Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                            <a href="#" class="link1">Read More</a>
+                    END-SLOT #}
+                    {{ renderSlot('content_5') }}
                 {% endblock %}
                 </div>
                 <div class="wrapper">
                 {% block content_6 %}
-                    {{ renderSlot('content_6') }}  
+                    {# BEGIN-SLOT CONTENT_6
+                        htmlContent: |
+                            <h3><span class="dropcap">6</span>Product name</h3>
+                            <figure><img src="/bundles/businesswebsitetheme/images/page4_img6.jpg" alt=""></figure>
+                            <p class="pad_bot1">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <a href="#" class="link1">Read More</a>
+                    END-SLOT #}
+                    {{ renderSlot('content_6') }}
                 {% endblock %}
                 </div>
             </section>

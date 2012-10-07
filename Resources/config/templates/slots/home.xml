@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <container xmlns="http://symfony.com/schema/dic/services"
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
-
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+        <service id="business_website.theme.template.home.slots.logo" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">logo</argument>
+            <argument type="collection" >
+                <argument key="repeated">site</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<img src="/uploads/assets/media/business-website-original-logo.png" title="Progress website logo" alt="Progress website logo" />]]>
+                </argument>
+            </argument>
+            <tag name="business_website.theme.template.home.slots" />
+        </service>
+        <service id="business_website.theme.template.home.slots.nav_menu" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">nav_menu</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="blockType">BusinessMenu</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<img src="/uploads/assets/media/business-website-original-logo.png" title="Progress website logo" alt="Progress website logo" />]]>
+                </argument>
+            </argument>
+            <tag name="business_website.theme.template.home.slots" />
+        </service>
         <service id="business_website.theme.template.home.slots.slider_box" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">slider_box</argument>
             <argument type="collection" >
@@ -12,7 +32,6 @@
             </argument>
             <tag name="business_website.theme.template.home.slots" />
         </service>
-
         <service id="business_website.theme.template.home.slots.top_section_title_1" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_title_1</argument>
             <argument type="collection" >
@@ -20,20 +39,15 @@
             </argument>
             <tag name="business_website.theme.template.home.slots" />
         </service>
-
         <service id="business_website.theme.template.home.slots.top_section_1" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_1</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <p class="pad_bot1">Progress is one of <a href="http://blog.templatemonster.com/free-website-templates/" target="_blank">free website templates</a> created by TemplateMonster.com, optimized for 1024x768 res.</p>
-                        <a href="#" class="link1">Read More</a>
-                    ]]>
+                    <![CDATA[<p class="pad_bot1">Progress is one of <a href="http://blog.templatemonster.com/free-website-templates/" target="_blank">free website templates</a> created by TemplateMonster.com, optimized for 1024x768 res.</p><a href="#" class="link1">Read More</a>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.home.slots" />
         </service>
-
         <service id="business_website.theme.template.home.slots.top_section_title_2" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_title_2</argument>
             <argument type="collection" >
@@ -41,20 +55,15 @@
             </argument>
             <tag name="business_website.theme.template.home.slots" />
         </service>
-
         <service id="business_website.theme.template.home.slots.top_section_2" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_2</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <p class="pad_bot1">This <a href="http://blog.templatemonster.com/2011/07/11/free-website-template-slider-typography/">Progress Template</a> goes with two packages â€“ with PSD source files and without them.</p>
-                        <a href="#" class="link1">Read More</a>
-                    ]]>
+                    <![CDATA[<p class="pad_bot1">This <a href="http://blog.templatemonster.com/2011/07/11/free-website-template-slider-typography/">Progress Template</a> goes with two packages â€“ with PSD source files and without them.</p><a href="#" class="link1">Read More</a>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.home.slots" />
         </service>
-
         <service id="business_website.theme.template.home.slots.top_section_title_3" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_title_3</argument>
             <argument type="collection" >
@@ -62,20 +71,15 @@
             </argument>
             <tag name="business_website.theme.template.home.slots" />
         </service>
-
         <service id="business_website.theme.template.home.slots.top_section_3" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_3</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <p class="pad_bot1">PSD source files are available for free for registered members. The basic package is available for anyone.</p>
-                        <a href="#" class="link1">Read More</a>
-                    ]]>
+                    <![CDATA[<p class="pad_bot1">PSD source files are available for free for registered members. The basic package is available for anyone.</p><a href="#" class="link1">Read More</a>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.home.slots" />
         </service>
-
         <service id="business_website.theme.template.home.slots.top_section_title_4" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_title_4</argument>
             <argument type="collection" >
@@ -83,35 +87,24 @@
             </argument>
             <tag name="business_website.theme.template.home.slots" />
         </service>
-
         <service id="business_website.theme.template.home.slots.top_section_4" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">top_section_4</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <p class="pad_bot1">This website template has several pages: Home, News, Services, Products, Contacts (contact form doesnâ€™t work).</p>
-                        <a href="#" class="link1">Read More</a>
-                    ]]>
+                    <![CDATA[<p class="pad_bot1">This website template has several pages: Home, News, Services, Products, Contacts (contact form doesnâ€™t work).</p><a href="#" class="link1">Read More</a>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.home.slots" />
         </service>
-
         <service id="business_website.theme.template.home.slots.left_sidebar_content" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">left_sidebar_content</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <h2>Welcome, dear visitor!</h2>
-                        <figure class="left marg_right1"><img src="/bundles/businesswebsitetheme/images/page1_img1.jpg" alt=""></figure>
-                        <p class="pad_bot1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.</p>
-                        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-                    ]]>
+                    <![CDATA[<h2>Welcome, dear visitor!</h2><figure class="left marg_right1"><img src="/bundles/businesswebsitetheme/images/page1_img1.jpg" alt=""></figure><p class="pad_bot1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.</p><p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.home.slots" />
         </service>
-
         <service id="business_website.theme.template.home.slots.right_sidebar_content" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">right_sidebar_content</argument>
             <argument type="collection" >

@@ -1,166 +1,116 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <container xmlns="http://symfony.com/schema/dic/services"
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
-
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="business_website.theme.template.home.slots.logo" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.base.slots.logo" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">logo</argument>
             <argument type="collection" >
                 <argument key="repeated">site</argument>
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <img src="/uploads/assets/media/business-website-original-logo.png" title="Progress website logo" alt="Progress website logo" />
-                    ]]>
+                    <![CDATA[<img src="/uploads/assets/media/business-website-original-logo.png" title="Progress website logo" alt="Progress website logo" />]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.base.slots" />
         </service>
-
-        <service id="business_website.theme.template.home.slots.nav_menu" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.base.slots.nav_menu" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">nav_menu</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
                 <argument key="blockType">BusinessMenu</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<img src="/uploads/assets/media/business-website-original-logo.png" title="Progress website logo" alt="Progress website logo" />]]>
+                </argument>
             </argument>
             <tag name="business_website.theme.template.base.slots" />
         </service>
-
-        <service id="business_website.theme.template.home.slots.footer_title_1" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.base.slots.footer_title_1" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">footer_title_1</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <h4>Why Us?</h4>
-                    ]]>
+                    <![CDATA[<h4>Why Us?</h4>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.base.slots" />
         </service>
-
-        <service id="business_website.theme.template.home.slots.nav_menu_1" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.base.slots.nav_menu_1" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">nav_menu_1</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <ul class="list1">
-                            <li><a href="#">Lorem ipsum dolor sit</a></li>
-                            <li><a href="#">Dmet, consectetur</a></li>
-                            <li><a href="#">Adipisicing elit eiusmod </a></li>
-                            <li><a href="#">Tempor incididunt ut</a></li>
-                        </ul>
-                    ]]>
+                    <![CDATA[<ul class="list1"><li><a href="#">Lorem ipsum dolor sit</a></li><li><a href="#">Dmet, consectetur</a></li><li><a href="#">Adipisicing elit eiusmod </a></li><li><a href="#">Tempor incididunt ut</a></li></ul>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.base.slots" />
         </service>
-
-        <service id="business_website.theme.template.home.slots.footer_title_2" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.base.slots.footer_title_2" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">footer_title_2</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <h4>Address</h4>
-                    ]]>
+                    <![CDATA[<h4>Address</h4>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.base.slots" />
         </service>
-
-        <service id="business_website.theme.template.home.slots.nav_menu_2" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.base.slots.nav_menu_2" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">nav_menu_2</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <ul class="address">
-                            <li><span>Country:</span>USA</li>
-                            <li><span>City:</span>San Diego</li>
-                            <li><span>Phone:</span>8 800 154-45-67</li>
-                            <li><span>Email:</span><a href="mailto:">progress@mail.com</a></li>
-                        </ul>
-                    ]]>
+                    <![CDATA[<ul class="address"><li><span>Country:</span>USA</li><li><span>City:</span>San Diego</li><li><span>Phone:</span>8 800 154-45-67</li><li><span>Email:</span><a href="mailto:">progress@mail.com</a></li></ul>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.base.slots" />
         </service>
-
-        <service id="business_website.theme.template.home.slots.footer_title_3" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.base.slots.footer_title_3" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">footer_title_3</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <h4>Follow Us</h4>
-                    ]]>
+                    <![CDATA[<h4>Follow Us</h4>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.base.slots" />
         </service>
-
-        <service id="business_website.theme.template.home.slots.nav_menu_3" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.base.slots.nav_menu_3" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">nav_menu_3</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <ul id="icons">
-                            <li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon1.jpg" alt="">Facebook</a></li>
-                            <li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon2.jpg" alt="">Twitter</a></li>
-                            <li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon3.jpg" alt="">LinkedIn</a></li>
-                            <li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon4.jpg" alt="">Delicious</a></li>
-                        </ul>
-                    ]]>
+                    <![CDATA[<ul id="icons"><li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon1.jpg" alt="">Facebook</a></li><li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon2.jpg" alt="">Twitter</a></li><li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon3.jpg" alt="">LinkedIn</a></li><li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon4.jpg" alt="">Delicious</a></li></ul>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.base.slots" />
         </service>
-
-        <service id="business_website.theme.template.home.slots.footer_title_4" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.base.slots.footer_title_4" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">footer_title_4</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <h4>Newsletter</h4>
-                    ]]>
+                    <![CDATA[<h4>Newsletter</h4>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.base.slots" />
         </service>
-
-        <service id="business_website.theme.template.home.slots.newsletter_box" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.base.slots.newsletter_box" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">newsletter_box</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <form id="newsletter" method="post">
-                            <div>
-                            <div class="wrapper">
-                                <input class="input" type="text" value="Type Your Email Here"  onblur="if(this.value=='') this.value='Type Your Email Here'" onfocus="if(this.value =='Type Your Email Here' ) this.value=''" >
-                            </div>
-                            <a href="#" class="button" onclick="document.getElementById('newsletter').submit()">Subscribe</a>
-                            </div>
-                        </form>
-                    ]]>
+                    <![CDATA[<form id="newsletter" method="post"><div><div class="wrapper"><input class="input" type="text" value="Type Your Email Here"  onblur="if(this.value=='') this.value='Type Your Email Here'" onfocus="if(this.value =='Type Your Email Here' ) this.value=''" ></div><a href="#" class="button" onclick="document.getElementById('newsletter').submit()">Subscribe</a></div></form>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.base.slots" />
         </service>
-
-        <service id="business_website.theme.template.home.slots.copyright_box" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website.theme.template.base.slots.copyright_box" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">copyright_box</argument>
             <argument type="collection" >
                 <argument key="repeated">site</argument>
                 <argument key="htmlContent">
-                    <![CDATA[
-                        <a href="#">(C) Copyright Progress Business Company</a>
-                    ]]>
+                    <![CDATA[<a href="#">(C) Copyright Progress Business Company</a>]]>
                 </argument>
             </argument>
             <tag name="business_website.theme.template.base.slots" />

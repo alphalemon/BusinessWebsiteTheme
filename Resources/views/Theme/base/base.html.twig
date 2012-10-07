@@ -1,7 +1,7 @@
 {% extends base_template %}
 
 {% block conditional_assets %}
-    <!--[if lt IE 9]> 
+    <!--[if lt IE 9]>
   	<script type="text/javascript" src="/bundles/businesswebsitetheme/js/html5.js"></script>
 	<style type="text/css">
             .bg{ behavior: url(/bundles/businesswebsitetheme/js/PIE.htc); }
@@ -23,9 +23,24 @@
                 <!-- header -->
                 <header>
                     <div class="wrapper">
-                    <div id="logo">{% block logo %}{{ renderSlot('logo') }}{% endblock %}</div>
+                    <div id="logo">
+                    {% block logo %}
+                        {# BEGIN-SLOT LOGO
+                            repeated: site
+                            htmlContent: |
+                                <img src="/uploads/assets/media/business-website-original-logo.png" title="Progress website logo" alt="Progress website logo" />
+                        END-SLOT #}
+                        {{ renderSlot('logo') }}
+                    {% endblock %}
+                    </div>
                     <nav>
                     {% block nav_menu %}
+                        {# BEGIN-SLOT NAV_MENU
+                            repeated: language
+                            blockType: BusinessMenu
+                            htmlContent: |
+                                <img src="/uploads/assets/media/business-website-original-logo.png" title="Progress website logo" alt="Progress website logo" />
+                        END-SLOT #}
                         {{ renderSlot('nav_menu') }}
                     {% endblock %}
                     </nav>
@@ -48,39 +63,101 @@
             <div class="wrapper">
                 <section class="col3">
                     {% block footer_title_1 %}
+                        {# BEGIN-SLOT FOOTER_TITLE_1
+                            repeated: language
+                            htmlContent: |
+                                <h4>Why Us?</h4>
+                        END-SLOT #}
                         {{ renderSlot('footer_title_1') }}
                     {% endblock %}
-                        
+
                     {% block nav_menu_1 %}
+                        {# BEGIN-SLOT NAV_MENU_1
+                            repeated: language
+                            htmlContent: |
+                                <ul class="list1">
+                                    <li><a href="#">Lorem ipsum dolor sit</a></li>
+                                    <li><a href="#">Dmet, consectetur</a></li>
+                                    <li><a href="#">Adipisicing elit eiusmod </a></li>
+                                    <li><a href="#">Tempor incididunt ut</a></li>
+                                </ul>
+                        END-SLOT #}
                         {{ renderSlot('nav_menu_1') }}
                     {% endblock %}
                 </section>
                 <section class="col3 pad_left2">
                     {% block footer_title_2 %}
+                        {# BEGIN-SLOT FOOTER_TITLE_2
+                            repeated: language
+                            htmlContent: |
+                                <h4>Address</h4>
+                        END-SLOT #}
                         {{ renderSlot('footer_title_2') }}
                     {% endblock %}
-                        
+
                     {% block nav_menu_2 %}
+                        {# BEGIN-SLOT NAV_MENU_2
+                            repeated: language
+                            htmlContent: |
+                                <ul class="address">
+                                    <li><span>Country:</span>USA</li>
+                                    <li><span>City:</span>San Diego</li>
+                                    <li><span>Phone:</span>8 800 154-45-67</li>
+                                    <li><span>Email:</span><a href="mailto:">progress@mail.com</a></li>
+                                </ul>
+                        END-SLOT #}
                         {{ renderSlot('nav_menu_2') }}
                     {% endblock %}
                 </section>
                 <section class="col3 pad_left2">
                     {% block footer_title_3 %}
+                        {# BEGIN-SLOT FOOTER_TITLE_3
+                            repeated: language
+                            htmlContent: |
+                                <h4>Follow Us</h4>
+                        END-SLOT #}
                         {{ renderSlot('footer_title_3') }}
                     {% endblock %}
-                        
+
                     {% block nav_menu_3 %}
-                        {{ renderSlot('nav_menu_3') }} 
-                    {% endblock %}   
+                        {# BEGIN-SLOT NAV_MENU_3
+                            repeated: language
+                            htmlContent: |
+                                <ul id="icons">
+                                    <li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon1.jpg" alt="">Facebook</a></li>
+                                    <li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon2.jpg" alt="">Twitter</a></li>
+                                    <li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon3.jpg" alt="">LinkedIn</a></li>
+                                    <li><a href="#"><img src="/bundles/businesswebsitetheme/images/icon4.jpg" alt="">Delicious</a></li>
+                                </ul>
+                        END-SLOT #}
+                        {{ renderSlot('nav_menu_3') }}
+                    {% endblock %}
                 </section>
                 <section class="col2 right">
                     {% block footer_title_4 %}
+                        {# BEGIN-SLOT FOOTER_TITLE_4
+                            repeated: language
+                            htmlContent: |
+                                <h4>Newsletter</h4>
+                        END-SLOT #}
                         {{ renderSlot('footer_title_4') }}
                     {% endblock %}
-                    
+
                     {% block newsletter_box %}
+                        {# BEGIN-SLOT NEWSLETTER_BOX
+                            repeated: language
+                            htmlContent: |
+                                <form id="newsletter" method="post">
+                                    <div>
+                                    <div class="wrapper">
+                                        <input class="input" type="text" value="Type Your Email Here"  onblur="if(this.value=='') this.value='Type Your Email Here'" onfocus="if(this.value =='Type Your Email Here' ) this.value=''" >
+                                    </div>
+                                    <a href="#" class="button" onclick="document.getElementById('newsletter').submit()">Subscribe</a>
+                                    </div>
+                                </form>
+                        END-SLOT #}
                         {{ renderSlot('newsletter_box') }}
-                    {% endblock %}    
+                    {% endblock %}
                 </section>
             </div>
         </article>
@@ -90,6 +167,11 @@
 <!-- footer -->
     <footer>
     {% block copyright_box %}
+        {# BEGIN-SLOT COPYRIGHT_BOX
+            repeated: site
+            htmlContent: |
+                <a href="#">(C) Copyright Progress Business Company</a>
+        END-SLOT #}
         {{ renderSlot('copyright_box') }}
     {% endblock %}
     </footer>
