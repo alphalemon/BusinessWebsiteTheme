@@ -34,7 +34,8 @@ END-EXTERNAL-JAVASCRIPTS #}
                 <div class="wrapper">
                 <div id="logo">
                 {% block logo %}
-                    {# BEGIN-SLOT LOGO
+                    {# BEGIN-SLOT
+                        name: logo
                         repeated: site
                         htmlContent: |
                             <img src="/uploads/assets/media/business-website-original-logo.png" title="Progress website logo" alt="Progress website logo" />
@@ -44,7 +45,8 @@ END-EXTERNAL-JAVASCRIPTS #}
                 </div>
 
                 {% block nav_menu %}
-                    {# BEGIN-SLOT NAV_MENU
+                    {# BEGIN-SLOT
+                        name: nav_menu
                         repeated: language
                         blockType: BusinessMenu
                     END-SLOT #}
@@ -54,7 +56,8 @@ END-EXTERNAL-JAVASCRIPTS #}
                 </div>
                 <div class="wrapper">
                     {% block slider_box %}
-                        {# BEGIN-SLOT SLIDER_BOX
+                        {# BEGIN-SLOT
+                            name: slider_box
                             blockType: BusinessSlider
                         END-SLOT #}
                         {{ renderSlot('slider_box') }}
@@ -72,13 +75,15 @@ END-EXTERNAL-JAVASCRIPTS #}
         <div class="wrapper">
             <section class="cols">
             {% block top_section_title_1 %}
-                {# BEGIN-SLOT TOP_SECTION_TITLE_1
+                {# BEGIN-SLOT
+                    name: top_section_title_1
                     blockType: BusinessDropCap
                 END-SLOT #}
                 {{ renderSlot('top_section_title_1') }}
             {% endblock %}
             {% block top_section_1 %}
-                {# BEGIN-SLOT TOP_SECTION_1
+                {# BEGIN-SLOT
+                    name: top_section_1
                     htmlContent: |
                         <p class="pad_bot1">Progress is one of <a href="http://blog.templatemonster.com/free-website-templates/" target="_blank">free website templates</a> created by TemplateMonster.com, optimized for 1024x768 res.</p>
                         <a href="#" class="link1">Read More</a>
@@ -88,13 +93,15 @@ END-EXTERNAL-JAVASCRIPTS #}
             </section>
             <section class="cols pad_left1">
             {% block top_section_title_2 %}
-                {# BEGIN-SLOT TOP_SECTION_TITLE_2
+                {# BEGIN-SLOT
+                    name: top_section_title_2
                     blockType: BusinessDropCap
                 END-SLOT #}
                 {{ renderSlot('top_section_title_2') }}
             {% endblock %}
             {% block top_section_2 %}
-                {# BEGIN-SLOT TOP_SECTION_2
+                {# BEGIN-SLOT
+                    name: top_section_2
                     htmlContent: |
                         <p class="pad_bot1">This <a href="http://blog.templatemonster.com/2011/07/11/free-website-template-slider-typography/">Progress Template</a> goes with two packages â€“ with PSD source files and without them.</p>
                         <a href="#" class="link1">Read More</a>
@@ -104,13 +111,15 @@ END-EXTERNAL-JAVASCRIPTS #}
             </section>
             <section class="cols pad_left1">
             {% block top_section_title_3 %}
-                {# BEGIN-SLOT TOP_SECTION_TITLE_3
+                {# BEGIN-SLOT
+                    name: top_section_title_3
                     blockType: BusinessDropCap
                 END-SLOT #}
                 {{ renderSlot('top_section_title_3') }}
             {% endblock %}
             {% block top_section_3 %}
-                {# BEGIN-SLOT TOP_SECTION_3
+                {# BEGIN-SLOT
+                    name: top_section_3
                     htmlContent: |
                         <p class="pad_bot1">PSD source files are available for free for registered members. The basic package is available for anyone.</p>
                         <a href="#" class="link1">Read More</a>
@@ -120,13 +129,15 @@ END-EXTERNAL-JAVASCRIPTS #}
             </section>
             <section class="cols pad_left1">
             {% block top_section_title_4 %}
-                {# BEGIN-SLOT TOP_SECTION_TITLE_4
+                {# BEGIN-SLOT
+                    name: top_section_title_4
                     blockType: BusinessDropCap
                 END-SLOT #}
                 {{ renderSlot('top_section_title_4') }}
             {% endblock %}
             {% block top_section_4 %}
-                {# BEGIN-SLOT TOP_SECTION_4
+                {# BEGIN-SLOT
+                    name: top_section_4
                     htmlContent: |
                         <p class="pad_bot1">This website template has several pages: Home, News, Services, Products, Contacts (contact form doesnâ€™t work).</p>
                         <a href="#" class="link1">Read More</a>
@@ -139,7 +150,8 @@ END-EXTERNAL-JAVASCRIPTS #}
             <section class="col1">
                 <div class="wrapper">
                 {% block left_sidebar_content %}
-                    {# BEGIN-SLOT LEFT_SIDEBAR_CONTENT
+                    {# BEGIN-SLOT
+                        name: left_sidebar_content
                         htmlContent: |
                             <h2>Welcome, dear visitor!</h2>
                             <figure class="left marg_right1"><img src="/bundles/businesswebsitetheme/images/page1_img1.jpg" alt=""></figure>
@@ -152,7 +164,8 @@ END-EXTERNAL-JAVASCRIPTS #}
             </section>
             <section class="col2 pad_left1">
                 {% block right_sidebar_content %}
-                    {# BEGIN-SLOT RIGHT_SIDEBAR_CONTENT
+                    {# BEGIN-SLOT
+                        name: right_sidebar_content
                         blockType: BusinessCarousel
                     END-SLOT #}
                     {{ renderSlot('right_sidebar_content') }}

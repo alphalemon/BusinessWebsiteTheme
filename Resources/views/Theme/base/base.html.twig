@@ -25,7 +25,8 @@
                     <div class="wrapper">
                     <div id="logo">
                     {% block logo %}
-                        {# BEGIN-SLOT LOGO
+                        {# BEGIN-SLOT
+                            name: logo
                             repeated: site
                             htmlContent: |
                                 <img src="/uploads/assets/media/business-website-original-logo.png" title="Progress website logo" alt="Progress website logo" />
@@ -35,7 +36,8 @@
                     </div>
                     <nav>
                     {% block nav_menu %}
-                        {# BEGIN-SLOT NAV_MENU
+                        {# BEGIN-SLOT
+                            name: nav_menu
                             repeated: language
                             blockType: BusinessMenu
                         END-SLOT #}
@@ -61,7 +63,8 @@
             <div class="wrapper">
                 <section class="col3">
                     {% block footer_title_1 %}
-                        {# BEGIN-SLOT FOOTER_TITLE_1
+                        {# BEGIN-SLOT
+                            name: footer_title_1
                             repeated: language
                             htmlContent: |
                                 <h4>Why Us?</h4>
@@ -70,7 +73,8 @@
                     {% endblock %}
 
                     {% block nav_menu_1 %}
-                        {# BEGIN-SLOT NAV_MENU_1
+                        {# BEGIN-SLOT
+                            name: nav_menu_1
                             repeated: language
                             htmlContent: |
                                 <ul class="list1">
@@ -85,7 +89,8 @@
                 </section>
                 <section class="col3 pad_left2">
                     {% block footer_title_2 %}
-                        {# BEGIN-SLOT FOOTER_TITLE_2
+                        {# BEGIN-SLOT
+                            name: footer_title_2
                             repeated: language
                             htmlContent: |
                                 <h4>Address</h4>
@@ -94,7 +99,8 @@
                     {% endblock %}
 
                     {% block nav_menu_2 %}
-                        {# BEGIN-SLOT NAV_MENU_2
+                        {# BEGIN-SLOT
+                            name: nav_menu_2
                             repeated: language
                             htmlContent: |
                                 <ul class="address">
@@ -109,7 +115,8 @@
                 </section>
                 <section class="col3 pad_left2">
                     {% block footer_title_3 %}
-                        {# BEGIN-SLOT FOOTER_TITLE_3
+                        {# BEGIN-SLOT
+                            name: footer_title_3
                             repeated: language
                             htmlContent: |
                                 <h4>Follow Us</h4>
@@ -118,7 +125,8 @@
                     {% endblock %}
 
                     {% block nav_menu_3 %}
-                        {# BEGIN-SLOT NAV_MENU_3
+                        {# BEGIN-SLOT
+                            name: nav_menu_3
                             repeated: language
                             htmlContent: |
                                 <ul id="icons">
@@ -133,7 +141,8 @@
                 </section>
                 <section class="col2 right">
                     {% block footer_title_4 %}
-                        {# BEGIN-SLOT FOOTER_TITLE_4
+                        {# BEGIN-SLOT
+                            name: footer_title_4
                             repeated: language
                             htmlContent: |
                                 <h4>Newsletter</h4>
@@ -142,7 +151,8 @@
                     {% endblock %}
 
                     {% block newsletter_box %}
-                        {# BEGIN-SLOT NEWSLETTER_BOX
+                        {# BEGIN-SLOT
+                            name: newsletter_box
                             repeated: language
                             htmlContent: |
                                 <form id="newsletter" method="post">
