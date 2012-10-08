@@ -19,9 +19,6 @@
             <argument type="collection" >
                 <argument key="repeated">language</argument>
                 <argument key="blockType">BusinessMenu</argument>
-                <argument key="htmlContent">
-                    <![CDATA[<img src="/uploads/assets/media/business-website-original-logo.png" title="Progress website logo" alt="Progress website logo" />]]>
-                </argument>
             </argument>
             <tag name="business_website.theme.template.base.slots" />
         </service>
