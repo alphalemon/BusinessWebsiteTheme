@@ -102,5 +102,15 @@
             </argument>
             <tag name="business_website.theme.template.base.slots" />
         </service>
+        <service id="business_website.theme.template.base.slots.copyright_box" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">copyright_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">site</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<a href="#">(C) Copyright Progress Business Company</a>]]>
+                </argument>
+            </argument>
+            <tag name="business_website.theme.template.base.slots" />
+        </service>
     </services>
 </container>
