@@ -37,8 +37,8 @@ class BusinessWebsiteThemeExtension extends BaseExtension
                             'path' => __DIR__.'/../Resources/config/templates',
                             'configFiles' =>
                             array(
-                                'fullpage.xml',
                                 'home.xml',
+                                'fullpage.xml',
                                 'rightcolumn.xml',
                                 'sixboxes.xml',
                             ),
@@ -48,10 +48,10 @@ class BusinessWebsiteThemeExtension extends BaseExtension
                                     'path' => __DIR__.'/../Resources/config/templates/slots',
                                     'configFiles' =>
                                     array(
-                                        'base.xml',
-                                        'fullpage.xml',
                                         'home.xml',
+                                        'fullpage.xml',
                                         'rightcolumn.xml',
+                                        'base.xml',
                                         'sixboxes.xml',
                                     ),
                                 ),

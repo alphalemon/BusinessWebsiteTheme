@@ -3,8 +3,6 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-
-
     <parameters>
         <parameter key="business_website.sixboxes.external_stylesheets" type="collection">
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/css/reset.css</parameter>
@@ -23,7 +21,6 @@
         <parameter key="business_website.sixboxes.external_stylesheets.cms" type="collection">
         </parameter>
     </parameters>
-
 
     <services>
         <service id="business_website.theme.template_assets.sixboxes" class="%alpha_lemon_theme_engine.template_assets.class%">
