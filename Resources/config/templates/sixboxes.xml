@@ -4,13 +4,13 @@
         xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="business_website.sixboxes.external_stylesheets" type="collection">
+        <parameter key="business_website_theme.sixboxes.external_stylesheets" type="collection">
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/css/reset.css</parameter>
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/css/layout.css</parameter>
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/css/style.css</parameter>
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/css/al_fix_style.css</parameter>
         </parameter>
-        <parameter key="business_website.sixboxes.external_javascripts" type="collection">
+        <parameter key="business_website_theme.sixboxes.external_javascripts" type="collection">
             <parameter>@AlphaLemonThemeEngineBundle/Resources/public/js/vendor/jquery/*</parameter>
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/js/cufon-yui.js</parameter>
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/js//al-cufon-replace.js</parameter>
@@ -18,29 +18,29 @@
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/js/Swis721_Cn_BT_700.font.js</parameter>
             <parameter>@BusinessWebsiteThemeBundle/Resources/public/js/tabs.js</parameter>
         </parameter>
-        <parameter key="business_website.sixboxes.external_stylesheets.cms" type="collection">
+        <parameter key="business_website_theme.sixboxes.external_stylesheets.cms" type="collection">
         </parameter>
     </parameters>
 
     <services>
-        <service id="business_website.theme.template_assets.sixboxes" class="%alpha_lemon_theme_engine.template_assets.class%">
+        <service id="business_website_theme.theme.template_assets.sixboxes" class="%alpha_lemon_theme_engine.template_assets.class%">
             <call method="setExternalStylesheets">
-                <argument>%business_website.sixboxes.external_stylesheets%</argument>
+                <argument>%business_website_theme.sixboxes.external_stylesheets%</argument>
             </call>
             <call method="setExternalJavascripts">
-                <argument>%business_website.sixboxes.external_javascripts%</argument>
+                <argument>%business_website_theme.sixboxes.external_javascripts%</argument>
             </call>
         </service>
 
-        <service id="business_website.theme.template.sixboxes.slots" class="%alpha_lemon_theme_engine.template_slots.class%">
-            <tag name="business_website.theme.template.sixboxes" />
+        <service id="business_website_theme.theme.template.sixboxes.slots" class="%alpha_lemon_theme_engine.template_slots.class%">
+            <tag name="business_website_theme.theme.template.sixboxes" />
         </service>
 
-        <service id="business_website.theme.template.sixboxes" class="%alpha_lemon_theme_engine.template.class%">
+        <service id="business_website_theme.theme.template.sixboxes" class="%alpha_lemon_theme_engine.template.class%">
             <argument type="service" id="kernel" />
-            <argument type="service" id="business_website.theme.template_assets.sixboxes" />
-            <argument type="service" id="business_website.theme.template.sixboxes.slots" />
-            <tag name="business_website.theme.template" />
+            <argument type="service" id="business_website_theme.theme.template_assets.sixboxes" />
+            <argument type="service" id="business_website_theme.theme.template.sixboxes.slots" />
+            <tag name="business_website_theme.theme.template" />
 
             <call method="setThemeName">
                 <argument type="string">BusinessWebsiteThemeBundle</argument>

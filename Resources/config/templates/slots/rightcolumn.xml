@@ -4,16 +4,16 @@
         xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="business_website.theme.template.rightcolumn.slots.middle_sidebar" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website_theme.theme.template.rightcolumn.slots.middle_sidebar" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">middle_sidebar</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
                     <![CDATA[<h2 class="under">Contact form</h2><form id="ContactForm" method="post"><div><div  class="wrapper"><span>Your Name:</span><input type="text" class="input" ></div><div  class="wrapper"><span>Your City:</span><input type="text" class="input" ></div><div  class="wrapper"><span>Your E-mail:</span><input type="text" class="input" ></div><div  class="textarea_box"><span>Your Message:</span><textarea name="textarea" cols="1" rows="1"></textarea></div><a href="#" onClick="document.getElementById('ContactForm').submit()">Send</a><a href="#" onClick="document.getElementById('ContactForm').reset()">Clear</a></div></form>]]>
                 </argument>
             </argument>
-            <tag name="business_website.theme.template.rightcolumn.slots" />
+            <tag name="business_website_theme.theme.template.rightcolumn.slots" />
         </service>
-        <service id="business_website.theme.template.rightcolumn.slots.right_sidebar" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="business_website_theme.theme.template.rightcolumn.slots.right_sidebar" class="%alpha_lemon_theme_engine.slot.class%">
             <argument type="string">right_sidebar</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -26,7 +26,7 @@ San Diego<br>
 +354 5635600<br><a href="mailto:" class="color2">elenwhite@mail.com</a></div><h2 class="under">Miscellaneous</h2><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium volupta- tum deleniti atque corrupti quos dolores et quas molestias excep- turi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum.</p>]]>
                 </argument>
             </argument>
-            <tag name="business_website.theme.template.rightcolumn.slots" />
+            <tag name="business_website_theme.theme.template.rightcolumn.slots" />
         </service>
     </services>
 </container>
