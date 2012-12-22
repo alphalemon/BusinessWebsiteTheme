@@ -1,2 +1,27 @@
 #logo{background-image:none;float:left;text-indent:0px}
 h1{font-size:44px;font-style:normal;font-weight:400;line-height:1.2em;padding:0 0 11px 0;color:#000;letter-spacing:-1px;float:none;}
+
+footer
+{
+    padding-bottom: 10px;
+}
+
+#alphalemon_love
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#alphalemon_love a
+{
+    color: #99FFCC;
+    font-size: 16px;
+    text-decoration: none;
+    font-style: normal;
+}
+
+#alphalemon_love a:hover
+{
+    color: #FF9900;
+}

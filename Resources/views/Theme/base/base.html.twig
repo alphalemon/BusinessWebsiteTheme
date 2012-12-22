@@ -184,6 +184,18 @@
         {{ renderSlot('copyright_box') }}
     {% endblock %}
     </footer>
+    
+    <div id="alphalemon_love">
+        {% block alphalemon_love %}
+            {# BEGIN-SLOT
+                name: alphalemon_love
+                repeated: site
+                htmlContent: |
+                    <a href="http://alphalemon.com">Powered by AlphaLemon CMS</a>
+            END-SLOT #}
+            {{ renderSlot('alphalemon_love') }}
+        {% endblock %}   
+    </div>
 <!-- footer end -->
 </div>
 {% endblock %}
